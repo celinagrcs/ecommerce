@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "Rayuela",
+    "author": "Julio Cortázar",
+    "price": "$32.189",
+    "description": "En Rayuela (1963), Julio Cortázar supo condensar sus obsesiones estéticas, literarias y vitales a partir de un mosaico diverso, profundo, inagotable que, a su vez, refleja de forma maravillosa lo más esencial de su época. El amor turbulento de Oliveira y La Maga, los amigos del Club de la Serpiente, las impredecibles caminatas por París -la ciudad que promete el cielo pero puede conducir al infierno-, encuentran su contracara en la aventura protagonizada por Oliveira, Talita y Traveler en Buenos Aires. Rayuela es un libro único, abierto a múltiples lecturas, lúdico, complejo, lleno de riesgo y humor, de una originalidad sin precedentes y un talento innato para influir en las futuras generaciones.",
+    "image": "/assets/rayuela1.png",
+    "featured": false
+  },
+  {
+    "id": 2,
+    "title": "CASA DE TIERRA Y SANGRE",
+    "author": "Sarah J. Maas",
+    "price": "$34.000",
+    "description": "Bryce Quinlan tenía una vida perfecta, trabajando todo el día y divirtiéndose toda la noche, hasta que un demonio asesina a sus mejores amigos, dejándola herida y sola. Cuando el culpable está detrás de las rejas pero los crímenes continúan, Bryce se encuentra a sí misma en el corazón de la investigación... y hará lo que sea necesario para vengar la muerte de sus amigos.",
+    "image": "/assets/ciudad-medialuna.jpg",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "Una Corte de Rosas y Espinas",
+    "author": "Sarah J. Maas",
+    "price": "$21.600",
+    "description": "hola",
+    "image": "/assets/acotar.jpg",
+    "featured": false
+  },
+  {
+    "id": 4,
+    "title": "Beach Read",
+    "author": "Emily Henry",
+    "price": "$",
+    "description": "Dos escritores, unas vacaciones y una apuesta. Todo puede suceder durante un verano. January Andrews es escritora de novelas románticas y una soñadora empedernida. August Everett escribe novelas serias y cree que el amor verdadero es sólo un cuento chino. Pero January y Gus tienen mucho más en común de lo que creen: Los dos están arruinados. Los dos están bloqueados. Y los dos necesitan escribir un bestseller antes de que termine el verano.",
+    "image": "/assets/beach-read.jpg",
+    "featured": true
+  },
+  {
+    "id": 5,
+    "title": "Todos somos villanos",
+    "author": "M.L Rio",
+    "price": "$29.000",
+    "description": "El día que Oliver Marks cumple su condena, el hombre que lo puso en la cárcel está esperándolo a la salida. El detective Colborne quiere saber la verdad y, después de diez años, Oliver finalmente está listo para contársela.Una década atrás: Oliver es uno de los siete actores shakespearianos en el Conservatorio Clásico Dellecher, un lugar donde rige la cruda ambición y la competencia feroz. En este mundo apartado, de chimeneas encendidas y libros con encuadernación de cuero, Oliver y sus amigos interpretan los mismos papeles arriba y abajo del escenario: el héroe, el villano, el tirano, la seductora, la ingenua, los extras. Pero en su cuarto y último año de conservatorio, las rivalidades amistosas se vuelven desagradables, y en la noche de estreno, la violencia real invade el mundo de fantasía de los estudiantes. Por la mañana, los chicos de cuarto año deben enfrentar su propia tragedia y su desafío actoral más difícil: convencerse unos a otros y a la policía de que son inocentes.¿Quién es quién en esta historia?",
+    "image": "/assets/todossomosvillanos.jpg",
+    "featured": true
+    },
+  {
+    "id": 6,
+    "title": "La Tregua",
+    "author": "Mario Benedetti",
+    "price": "$10.710",
+    "description": "hola",
+    "image": "/assets/latregua.webp",
+    "featured": false
+  },
+  {
+    "id": 7,
+    "title": "París era una fiesta",
+    "author": "Ernest Hemingway",
+    "price": "$27.729",
+    "description": "hola",
+    "image": "/assets/paris.jpg",
+    "featured": false
+  },
+  {
+    "id": 8,
+    "title": "From Lukov with Love",
+    "author": "Mariana Zapata",
+    "price": "$23.150",
+    "description": "hola",
+    "image": "/assets/mariana.jpg",
+    "featured": false
+  },
+  {
+    "id": 9,
+    "title": "Trono de cristal",
+    "author": "Sarah J. Maas",
+    "price": "$32.936",
+    "description": "En las tenebrosas minas de sal de Endovier, una muchacha de dieciocho años cumple cadena perpetua. Es una asesina profesional, la mejor en lo suyo, pero ha cometido un error fatal. La han capturado. El joven capitán Westfall le ofrece un trato: la libertad a cambio de un enorme sacrificio. Celaena debe representar al príncipe en un torneo a muerte, en el que deberá luchar con los asesinos y ladrones más peligrosos del reino. Viva o muerta, Celaena será libre. Tanto si gana como si pierde, está a punto de descubrir su verdadero destino. Pero ¿qué pasará entretanto con su corazón de asesina?",
+    "image": "/assets/tronodecristal.jpg",
+    "featured": true
+  },
+  {
+    "id": 9,
+    "title": "Harry Potter y la piedra filosofal",
+    "author": "J. K. Rowling",
+    "price": "$20.200",
+    "description": "hola",
+    "image": "/assets/harrypotter.jpg",
+    "featured": false
+  },
+  {
+    "id": 9,
+    "title": "Emma",
+    "author": "Jane Austen",
+    "price": "$",
+    "description": "hola",
+    "image": "/assets/emmajane.jpg",
+    "featured": false
+  },
+  {
+    "id": 9,
+    "title": "Novela de Ajedrez",
+    "author": "Stefan Zweig",
+    "price": "$23.420",
+    "description": "hola",
+    "image": "/assets/noveladeajedrez.jpg",
+    "featured": false
+  }
+]
