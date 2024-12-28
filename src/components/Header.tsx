@@ -13,9 +13,9 @@ const Header: React.FC = () => {
 
   return (
     <header
-    className="bg-cover bg-bookstore bg-center h-64 ">
+    className="bg-cover bg-[#078080] spikes bg-center h-64 ">
       <Navbar />
-      <h1 className='text-[#fff] font-extrabold text-center py-10 text-6xl'>
+      <h1 className='text-[#fff] font-title font-extrabold text-center py-14 text-6xl'>
         {headerText}
       </h1>
     </header>

@@ -55,7 +55,7 @@ const handleQuantityChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
               ))}
             </select>
               <button
-              className="bg-[#527853] text-white py-2 px-4 rounded"
+              className="bg-[#ff8e3c] text-white py-2 px-4 rounded"
               onClick={handleAddToCart}
               >
               Agregar al carrito

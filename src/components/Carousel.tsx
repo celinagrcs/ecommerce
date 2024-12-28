@@ -1,31 +1,30 @@
 // import { useRef } from "react";
-import { useCart } from "../context/CartContext";
+// import { useCart } from "../context/CartContext";
 import books from "../utils/books.json"
-import { CartItem } from "../types/cart";
+// import { CartItem } from "../types/cart";
 import { Link } from "react-router-dom";
 // import { MdKeyboardArrowLeft } from "react-icons/md";
 // import { MdKeyboardArrowRight } from "react-icons/md";
 
 const Carousel: React.FC = () => {
-  const { addToCart } = useCart();
+  // const { addToCart } = useCart();
   // const carouselRef = useRef<HTMLDivElement>(null);
 
   const featuredBooks = books.filter((book) => book.featured);
 
 
-  const handleAddToCart = (book: CartItem) => {
-    addToCart(book);
-  }
+  // const handleAddToCart = (book: CartItem) => {
+  //   addToCart(book);
+  // }
 
   return (
     <section className="container">
       <h2 className="font-extrabold text-2xl md:text-4xl py-5 text-center font-title text-[#2a2a2a] mb-6">
         Destacados
       </h2>
-      <section 
-          className="flex gap-6 p-4">
+      <section className="flex ms:flex-wrap gap-6 p-4">
         {featuredBooks.map((book) => (
-          <article key={book.id}  className="min-w-[300px] bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex-shrink-0">
+          <article key={book.id}  className="min-w-[300px] bg-white p-4 border border-[#ABD1C6] rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex-shrink-0">
             <div className="flex justify-center items-center mb-4">  
               <img 
               src={book.image} alt={book.title} 
@@ -37,12 +36,12 @@ const Carousel: React.FC = () => {
             </h3>
             <p className="text-gray-700">Autor: {book.author}</p>
             <p className="text-gray-900 font-bold">Precio: {book.price}</p>
-            <button
+            {/* <button
             className="w-full bg-[#527853] text-[#ffff] font-semibold py-2 px-4 rounded-lg transition-colors duration-200"
             onClick={() => handleAddToCart(book)}
             >
               Agregar al carrito
-            </button>
+            </button> */}
           </article>
         ))}
       </section>

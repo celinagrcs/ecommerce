@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
           <Link to="/CartPage">
             <FaBagShopping className="w-5 h-5 text-white" />
             {cart.length > 0 && (
-              <span className="absolute bg-[#EE7214] text-white rounded-full px-2 text-xs">
+              <span className="absolute bg-[#ff8e3c] text-white rounded-full px-2 text-xs">
                 {cart.length}
               </span>
             )}

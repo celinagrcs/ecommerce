@@ -6,7 +6,7 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <main className="bg-[#f2f7f5] min-h-screen p-6">
+      <main className="bg-[#F8F8F8] min-h-screen p-6">
         <Carousel />
         <BookList />
       </main>
