@@ -5,10 +5,10 @@ const CartPage: React.FC = () => {
 
   
   return (
-    <article className="max-w-3xl mx-auto p-6">
+    <article className="max-w-3xl mx-auto p-10">
       {cart.length === 0 ? (
         <div className="flex flex-col items-center">
-          <p className="text-center text-gray-500 mb-2">No hay productos en el carrito </p>
+          <p className="text-center py-10 text-gray-500 mb-2">No hay productos en el carrito </p>
         </div>
       ) : (
         <div className="bg-white shadow-md rounded-lg p-4">
@@ -24,7 +24,7 @@ const CartPage: React.FC = () => {
                   </div>
                 </div>
                 <button 
-                  className="mt-2 md:mt-0 bg-blue-500 text-white px-2 py-1 rounded" 
+                  className="mt-2 md:mt-0 bg-[#E16162] text-white px-2 py-1 rounded" 
                   onClick={() => removeFromCart(book.id)}
                   >
                   Eliminar
@@ -34,7 +34,7 @@ const CartPage: React.FC = () => {
           </ul>
           <div className="flex justify-end mt-4">
             <button 
-              className="bg-[#527853] hover:bg-green-600 text-white px-6 py-2 rounded-md">
+              className="bg-[#ff8e3c] hover:bg-green-600 text-white px-6 py-2 rounded-md">
               Proceder al Pago
             </button>
           </div>

@@ -5,12 +5,6 @@ import { CartItem } from '../types/cart';
 
 
 const BookList: React.FC = () => {
- /* const { addToCart } = useCart(); */
-
-
-/*  const handleAddToCart = (book: CartItem) => {
-    addToCart(book)
-  } */
 
   return (
     <>
@@ -24,7 +18,7 @@ const BookList: React.FC = () => {
             <div className="flex justify-center items-center mb-4">
               <img src={book.image} alt={book.title} className="object-contain h-48 w-48" />
             </div>
-            <h3 className="text-base font-bold mb-2 hover:text-gray-800">
+            <h3 className="text-base font-bold mb-2 hover:text-[#078080]">
               <Link to={`/book/${book.id}`}>{book.title}</Link>
             </h3>
             <p className="text-gray-700">Autor: {book.author}</p>

@@ -30,7 +30,7 @@
     "id": 4,
     "title": "Beach Read",
     "author": "Emily Henry",
-    "price": "$",
+    "price": "$34.077",
     "description": "Dos escritores, unas vacaciones y una apuesta. Todo puede suceder durante un verano. January Andrews es escritora de novelas románticas y una soñadora empedernida. August Everett escribe novelas serias y cree que el amor verdadero es sólo un cuento chino. Pero January y Gus tienen mucho más en común de lo que creen: Los dos están arruinados. Los dos están bloqueados. Y los dos necesitan escribir un bestseller antes de que termine el verano.",
     "image": "/assets/beach-read.jpg",
     "featured": true
@@ -78,7 +78,7 @@
     "price": "$32.936",
     "description": "En las tenebrosas minas de sal de Endovier, una muchacha de dieciocho años cumple cadena perpetua. Es una asesina profesional, la mejor en lo suyo, pero ha cometido un error fatal. La han capturado. El joven capitán Westfall le ofrece un trato: la libertad a cambio de un enorme sacrificio. Celaena debe representar al príncipe en un torneo a muerte, en el que deberá luchar con los asesinos y ladrones más peligrosos del reino. Viva o muerta, Celaena será libre. Tanto si gana como si pierde, está a punto de descubrir su verdadero destino. Pero ¿qué pasará entretanto con su corazón de asesina?",
     "image": "/assets/tronodecristal.jpg",
-    "featured": true
+    "featured": false
   },
   {
     "id": 10,
@@ -93,7 +93,7 @@
     "id": 11,
     "title": "Emma",
     "author": "Jane Austen",
-    "price": "$",
+    "price": "$29.941",
     "description": "hola",
     "image": "/assets/emmajane.jpg",
     "featured": false
