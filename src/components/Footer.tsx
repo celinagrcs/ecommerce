@@ -6,29 +6,37 @@ const Footer = () => {
   return (
     <footer className="bg-[#078080] px-14 py-20 text-[#FDF8FF]">
       <section>
-        <li>
-          <a href="">Preguntas frecuentes</a>
-        </li>
-        <li>
-          <a href="">Términos y condiciones</a>
-        </li>
-        <li>
-          <a href="">Contacto</a>
-        </li>
+        <ul className="list-none">
+          <li>
+            <a href="">Preguntas frecuentes</a>
+          </li>
+          <li>
+            <a href="">Términos y condiciones</a>
+          </li>
+          <li>
+            <a href="">Contacto</a>
+          </li>
+        </ul>
       </section>
       <section>
         
       </section>
       <section>
-        <ul className="flex">
+        <ul className="flex items-center gap-4 py-2">
           <li>
-            <FaFacebook />
+            <a href="">
+              <FaFacebook />
+            </a>
           </li>
           <li>
-            <FaInstagram />
+            <a href="">
+              <FaInstagram />
+            </a>
           </li>
           <li>
-            <RiTwitterXFill />
+            <a href="">
+              <RiTwitterXFill />
+            </a>
           </li>
         </ul>
       </section>
