@@ -5,7 +5,7 @@ const MainBooks: React.FC = () => {
   const navigate = useNavigate();
 
   const handleClick = (id: number) => {
-    navigate(`/book/${id}`)
+    navigate(`/book/${id}`);
   }
 
   const featuredBooks = books.filter((book) => book.featured);
@@ -17,7 +17,7 @@ const MainBooks: React.FC = () => {
       </h2>
       <section className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-6">
         {featuredBooks.map((book) => (
-          <article key={book.id} onClick={() => {handleClick(book.id)}} className="min-w-[300px] bg-white p-4 border border-[#ABD1C6] rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex-shrink-0">
+          <article key={book.id} onClick={() => {handleClick(book.id)}} className="min-w-[300px] bg-white p-4 border border-[#ABD1C6] rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex-shrink-0 cursor-pointer">
             <div className="flex justify-center items-center mb-4">  
               <img 
               src={book.image} alt={book.title} 
