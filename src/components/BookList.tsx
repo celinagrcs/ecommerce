@@ -1,10 +1,15 @@
 //import { useCart } from '../context/CartContext' 
 import books from '../utils/books.json'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { CartItem } from '../types/cart';
 
 
 const BookList: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleClick = (id: number) => {
+    navigate(`/book/${id}`);
+  }
 
   return (
     <>
@@ -14,7 +19,7 @@ const BookList: React.FC = () => {
       </section>
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {books.map((book: CartItem) => (
-          <div key={book.id}  className="bg-white p-4 border border-[#ABD1C6] rounded-lg shadow-md hover:shadow-lg transition-shadow duration-500">
+          <article key={book.id} onClick={() => {handleClick(book.id)}} className="bg-white p-4 border border-[#ABD1C6] rounded-lg shadow-md hover:shadow-lg transition-shadow duration-500 cursor-pointer">
             <div className="flex justify-center items-center mb-4">
               <img src={book.image} alt={book.title} className="object-contain h-48 w-48" />
             </div>
@@ -24,7 +29,7 @@ const BookList: React.FC = () => {
             <p className="text-gray-700">Autor: {book.author}</p>
             <p className="text-gray-900 font-bold">Precio: {book.price}</p>
           
-          </div>
+          </article>
         ))}
     </section>
 
