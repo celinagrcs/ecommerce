@@ -25,7 +25,7 @@ const MainBooks: React.FC = () => {
               />
             </div>
             <h3 className="text-base font-bold mb-2 hover:text-[#078080]">
-              <Link to={`/book/${book.id}`}>{book.title}</Link>
+              <Link to={`/book/${book.id}`} onClick={(e) => e.stopPropagation()}>{book.title}</Link>
             </h3>
             <p className="text-gray-700">Autor: {book.author}</p>
             <p className="text-gray-900 font-bold">Precio: {book.price}</p>

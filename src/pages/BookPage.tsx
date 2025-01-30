@@ -15,13 +15,19 @@ if (!book) {
 };
 
 const handleAddToCart = () => {
-  for (let i = 0; i < quantity; i++) {
-    addToCart(book);
+  if (book) {
+    const bookWithQuantity = {
+      ...book,
+      quantity: quantity
+    } as CartItem;
+    addToCart(bookWithQuantity)
+    console.log("cantidad", quantity)
   }
 };
 
 const handleQuantityChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-  setQuantity(parseInt(event.target.value, 10));
+  const newQuantity = parseInt(event.target.value, 10);
+  setQuantity(newQuantity);
 };
 
   return(
@@ -39,7 +45,7 @@ const handleQuantityChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         <p className="text-gray-900 font-bold mb-2">Precio: {book.price}</p>
         <div className="flex items-center gap-2">
           {/* <div className="flex items-center mb-4"> */}
-            <label className="mr-2" htmlFor="quantity">
+          <label className="mr-2" htmlFor="quantity">
               Cantidad:
             </label>
             <select
@@ -53,16 +59,16 @@ const handleQuantityChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
                   {num + 1}
                 </option>
               ))}
-            </select>
+            </select> 
               <button
-              className="bg-[#ff8e3c] text-white py-2 px-4 rounded"
+              className="bg-[#ff8e3c] hover:bg-[#e67a2e] text-white py-2 px-4 rounded"
               onClick={handleAddToCart}
               >
               Agregar al carrito
             </button>
         </div>
         <div>
-          <p className="text-gray-900 font-bold mb-2">Sinopsis: </p>
+          <p className="text-gray-900 font-bold mb-2 mt-2">Sinopsis: </p>
           <p className=""> {book.description}</p>
         </div>
 

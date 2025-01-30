@@ -49,7 +49,7 @@
     "title": "La Tregua",
     "author": "Mario Benedetti",
     "price": "$10.710",
-    "description": "hola",
+    "description": "Martín Santomé, viudo con tres hijos, en las vísperas de su jubilación comienza a registrar en un diario su vida gris y sin relieve. La vida cotidiana de la rutina en la oficina y la de un hogar desunido y crispado se verán alteradas cuando irrumpe en su rutina la joven Laura Avellaneda, su nueva empleada. Y este hombre, casi sin proponérselo, decide abrir en su vida un paréntesis luminoso.",
     "image": "/assets/latregua.webp",
     "featured": false
   },
@@ -67,7 +67,7 @@
     "title": "From Lukov with Love",
     "author": "Mariana Zapata",
     "price": "$23.150",
-    "description": "hola",
+    "description": "Si alguien le pidiera a Jasmine Santos que describiera la última época de su vida con una sola palabra, seguramente utilizaría una que habría que censurar. Después de años de dedicación e incontables huesos y compromisos rotos, sabe que su oportunidad para dedicarse profesionalmente al patinaje artístico está esfumándose. Sin embargo, cuando la oferta que tanto estaba esperando por fin llega, lo hace de la mano de un idiota arrogante que es, además, su némesis. Pero tal vez haya llegado el momento de que Jasmine reconsidere muchas cosas... Entre ellas, a Ivan Lukov.",
     "image": "/assets/mariana.jpg",
     "featured": false
   },
@@ -85,7 +85,7 @@
     "title": "Harry Potter y la piedra filosofal",
     "author": "J. K. Rowling",
     "price": "$20.200",
-    "description": "hola",
+    "description": "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley. Harry se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para siempre. En ella le comunican que ha sido aceptado como alumno en el colegio interno Hogwarts de magia y hechicería. A partir de ese momento, la suerte de Harry da un vuelco espectacular. En esa escuela tan especial aprenderá encantamientos, trucos fabulosos y tácticas de defensa contra las malas artes. Se convertirá en el campeón escolar de quidditch, especie de fútbol aéreo que se juega montado sobre escobas, y se hará un puñado de buenos amigos... aunque también algunos temibles enemigos. Pero sobre todo, conocerá los secretos que le permitirán cumplir con su destino. Pues, aunque no lo parezca a primera vista, Harry no es un chico común y corriente. ¡Es un verdadero mago!",
     "image": "/assets/harrypotter.jpg",
     "featured": false
   },
@@ -94,7 +94,7 @@
     "title": "Emma",
     "author": "Jane Austen",
     "price": "$29.941",
-    "description": "hola",
+    "description": "Emma cuenta la historia de una inteligente y laboriosa joven empeñada en hacer de celestina de todas sus amistades. Cuando su institutriz, amiga y confidente decide contraer matrimonio, Emma Woodhouse se descubrirá sola, frente al vacío de su vida y con la penosa tarea de intentar que los demáslleven una vida tan perfecta como la suya. Pero todos sus esfuerzos de manipulación sentimental tan solo consiguen crear a su alrededor una telaraña de enredos, malentendidos y confusiones que pone a prueba su confianza en sí misma.",
     "image": "/assets/emmajane.jpg",
     "featured": false
   },
@@ -103,7 +103,7 @@
     "title": "Novela de Ajedrez",
     "author": "Stefan Zweig",
     "price": "$23.420",
-    "description": "hola",
+    "description": "Novela de ajedrez cuenta la historia de Mirko Czentovicz, un outsider con la mente vacía y campeón del mundo de ajedrez. Durante un viaje en el barco que le lleva de gira, se encuentra con el doctor B., que en una partida logra desestabilizarlo. El encuentro entre estos dos personajes tan antagónicos es la base argumental con la que Stefan Zweig explora de manera simbólica el conflicto entre barbarie y civilización, brutalidad y educación, conciencia y violencia o pensamiento y acción. Una partida final que puede concebirse como un epílogo de la lucha de Zweig contra el fanatismo y la radicalización de la política, y la defensa del humanismo como pilar fundamental de su idea de Europa.",
     "image": "/assets/noveladeajedrez.jpg",
     "featured": false
   }

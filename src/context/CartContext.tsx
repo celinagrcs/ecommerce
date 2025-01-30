@@ -1,28 +1,41 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { CartItem } from "../types/cart";
 
 
 interface CartContextProps {
   cart: CartItem[],
-  addToCart: (item: CartItem) => void;
+  addToCart: (item: CartItem, quantity?: number) => void;
   removeFromCart: (id: number) => void;
 }
 
 const CartContext = createContext<CartContextProps | undefined>(undefined);
 
 export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [cart, setCart] = useState<CartItem[]>([]);
+  const [cart, setCart] = useState<CartItem[]>(() => {
+    const storedCart = localStorage.getItem("cart");
+    return storedCart ? JSON.parse(storedCart) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
 
   const addToCart = (item: CartItem) => {
     setCart((prev) => {
-      console.log("addToCart llamado con:", item);
-
-      const isItemInCart = prev.some((cartItem) => cartItem.id === item.id);
-      if(isItemInCart) {
-        return prev;
+      const existingItemIndex = prev.findIndex(
+        (cartItem) => cartItem.id === item.id
+      );
+  
+      if (existingItemIndex !== -1) {
+        return prev.map((cartItem) => 
+          cartItem.id === item.id
+            ? { ...item } // Aquí usamos el nuevo item completo
+            : cartItem
+        );
       }
+  
       return [...prev, item];
-    })
+    });
   };
 
   const removeFromCart = (id: number) => {
