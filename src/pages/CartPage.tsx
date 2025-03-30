@@ -1,8 +1,17 @@
 import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
+import { confirmDelete } from "../utils/swalUtils";
 
 const CartPage: React.FC = () => {
   const { cart, removeFromCart } = useCart();
+
+  const handleDelete = (id: string | number) => {
+    confirmDelete(() => removeFromCart(Number(id)));
+  };
+  const totalPrice = cart.reduce((total, book) => {
+    const priceNumber = parseFloat(book.price.replace('$', ''));
+    return total + (priceNumber * book.quantity);
+  }, 0);
   
   return (
     <article className="max-w-3xl mx-auto p-10">
@@ -23,11 +32,12 @@ const CartPage: React.FC = () => {
                     <p className="text-gray-600">{book.author}</p>
                     <p className="text-[#4d9750] font-bold">{book.price}</p>
                     <p className="text-gray-600">Cantidad: {book.quantity}</p> 
+                    <p className="text-gray-600">Subtotal: {(parseFloat(book.price.replace('$', '')) * book.quantity).toFixed(2)}</p>
                   </div>
                 </div>
                 <button 
                   className="mt-2 md:mt-0 bg-[#E16162] text-white px-2 py-1 rounded" 
-                  onClick={() => removeFromCart(book.id)}
+                  onClick={() => handleDelete(book.id)}
                   >
                   Eliminar
                 </button>
@@ -36,11 +46,11 @@ const CartPage: React.FC = () => {
           </ul>
           <div className="flex justify-between mt-4 text-lg font-bold">
             <span>Total:</span>
-            {/* <span className="text-[#4d9750]">${totalPrice.toFixed(2)}</span> */}
+            <span className="text-[#4d9750]">${totalPrice.toFixed(2)}</span>
           </div>
           <div className="flex justify-end mt-4">
             <button 
-              className="bg-[#ff8e3c] hover:bg-green-600 text-white px-6 py-2 rounded-md">
+              className="bg-[#ff8e3c] hover:bg-[#d37533] text-white px-6 py-2 rounded-md transition-colors">
               Proceder al Pago
             </button>
           </div>
