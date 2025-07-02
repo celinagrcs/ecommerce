@@ -2,7 +2,7 @@ import Swal from "sweetalert2";
 import 'sweetalert2/dist/sweetalert2.min.css';
 
 export const confirmDelete = (onConfirm: () => void) => {
-  console.log("Se está ejecutando confirmDelete");
+
   Swal.fire({
     title: "¿Estás seguro?",
     text: "Este producto se eliminará del carrito.",
