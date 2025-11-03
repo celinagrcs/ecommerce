@@ -1,23 +1,21 @@
-import { useLocation } from 'react-router-dom';
+
 import Navbar from '../components/Navbar'
+import { useLocation } from 'react-router-dom'
 
 const Header: React.FC = () => {
   const location = useLocation();
+  const isHome = location.pathname === "/";
 
-  const headerTexts: { [key: string]: string } = {
-    '/CartPage': 'Carrito de Compras',
-    '/': 'Libreria'
-  }
-
-  const headerText = headerTexts[location.pathname] || 'Libreria';
 
   return (
-    <header
-    className="bg-cover bg-[#078080] spikes bg-center max-sm:h-80 ">
+    <header className={`${isHome ? '' : 'bg-[#fde8f0]'}`}>
       <Navbar />
-      <h1 className='text-[#fff] font-title font-extrabold text-center py-14 max-sm:py-16 text-6xl'>
-        {headerText}
-      </h1>
+      {isHome && (
+        <section 
+        className='w-full h-[80vh] bg-cover bg-center bg-fixed'
+        style={{ backgroundImage: 'url("/assets/headers.jpg")' }}>
+        </section>
+      )}
     </header>
   )
 }

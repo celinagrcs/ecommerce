@@ -36,7 +36,7 @@ const handleQuantityChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         <img
           src={book.image}
           alt={book.title}
-          className="w-72 h-auto object-cover rounded-lg"
+          className="w-72 h-auto object-contain rounded-lg"
         />
       </div>
       <div className="p-4 w-full max-w-md bg-white rounded-lg shadow-md">

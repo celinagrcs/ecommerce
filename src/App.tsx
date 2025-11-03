@@ -4,6 +4,7 @@ import Header from './components/Header'
 import CartPage from './pages/CartPage'
 import BookPage from './pages/BookPage'
 import ChatSupport from './components/ChatSupport'
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Route path='/CartPage' element={<CartPage />} />
         <Route path='/book/:id' element={<BookPage />} />
       </Routes>
+      <Footer />
     </>
   )
 }
