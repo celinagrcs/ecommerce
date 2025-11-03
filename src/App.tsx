@@ -3,7 +3,7 @@ import Home from './pages/Home'
 import Header from './components/Header'
 import CartPage from './pages/CartPage'
 import BookPage from './pages/BookPage'
-import ChatSupport from './components/ChatSupport'
+/*import ChatSupport from './components/ChatSupport'*/
 import Footer from "./components/Footer"
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Header />
-      <ChatSupport />
+      {/*<ChatSupport /> */}
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/CartPage' element={<CartPage />} />

@@ -1,4 +1,4 @@
-import { useState } from "react";
+/*import { useState } from "react";
 import { sendMessageToOpenAI } from "../service/openai";
 
 const ChatSupport = () => {
@@ -91,4 +91,4 @@ const ChatSupport = () => {
   );
 };
 
-export default ChatSupport;
+export default ChatSupport; */
