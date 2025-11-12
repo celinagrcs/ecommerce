@@ -5,11 +5,13 @@ import CartPage from './pages/CartPage'
 import BookPage from './pages/BookPage'
 /*import ChatSupport from './components/ChatSupport'*/
 import Footer from "./components/Footer"
+import ScrollToTop from './utils/ScrollToTop'
 
 function App() {
 
   return (
     <>
+      <ScrollToTop />
       <Header />
       {/*<ChatSupport /> */}
       <Routes>
