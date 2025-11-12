@@ -4,7 +4,7 @@ import { RiTwitterXFill } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#ff8e3c] px-14 py-20 text-[#FDF8FF]">
+    <footer className="bg-[#f08c45] h-auto px-14 py-20 text-[#FDF8FF]">
       <section>
         <ul className="list-none">
           <li>

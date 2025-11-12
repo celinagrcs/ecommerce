@@ -17,7 +17,7 @@ const MainBooks: React.FC = () => {
       </h2>
       <section className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-6">
         {featuredBooks.map((book) => (
-          <article key={book.id} onClick={() => {handleClick(book.id)}} className="min-w-[300px] bg-white p-4 border border-[#eea36d] rounded-lg shadow-lg hover:shadow-[#d1baab] transition-shadow duration-600 flex-shrink-0 cursor-pointer">
+          <article key={book.id} onClick={() => {handleClick(book.id)}} className="min-w-[300px] bg-white p-4 border border-dashed border-[#eea36d] rounded-lg shadow-lg hover:shadow-[#d1baab] transition-shadow duration-600 flex-shrink-0 cursor-pointer">
             <div className="flex justify-center items-center mb-4">  
               <img 
               src={book.image} alt={book.title} 
