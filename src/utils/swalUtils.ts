@@ -15,7 +15,12 @@ export const confirmDelete = (onConfirm: () => void) => {
   }).then((result) => {
     if (result.isConfirmed) {
       onConfirm();
-      Swal.fire("Eliminado", "El producto ha sido eliminado.", "success");
+      Swal.fire({
+        title:"Eliminado",
+        text: "El producto ha sido eliminado.",
+        icon: "success",
+        confirmButtonColor: "#e67a2e"
+      });
     }
   });
 }

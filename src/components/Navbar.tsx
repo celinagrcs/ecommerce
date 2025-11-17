@@ -32,13 +32,13 @@ const Navbar: React.FC = () => {
         )}
         </div>
         <section>
-          <h1 className='text-[#000] font-title text-[3rem]'>
+          <h1 className='text-[#000] font-title text-[2rem]'>
             {headerText}
           </h1>
         </section>
         <button>
           <Link to="/CartPage">
-            <FaBagShopping className="w-5 h-5 text-black" />
+            <FaBagShopping className="w-6 h-6 text-black" />
             {cart.length > 0 && (
               <span className="absolute bg-[#ff8e3c] text-white rounded-full px-2 text-xs">
                 {cart.length}

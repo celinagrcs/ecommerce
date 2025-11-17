@@ -1,27 +1,67 @@
-/*import { useState } from "react";
-import { sendMessageToOpenAI } from "../service/openai";
+import { useEffect, useRef, useState } from "react"
 
-const ChatSupport = () => {
+
+function ChatSupport() {
   const [isOpen, setIsOpen] = useState(false);
-  const [messages, setMessages] = useState([
-    { from: "bot", text: "Hola 👋 ¿En qué puedo ayudarte?" },
-  ]);
+  const [message, setMessages] = useState([{
+    from: "bot", text: "Hola 👋 ¿En qué puedo ayudarte?"
+  }]);
   const [userInput, setUserInput] = useState("");
-
+  const chatRef = useRef<HTMLDivElement>(null);
+    
   const toggleChat = () => {
     setIsOpen((prev) => !prev);
   };
 
-  const handleSend = async () => {
-    if (!userInput.trim()) return;
-  
-    const newMessage = { from: "user", text: userInput };
-    setMessages((prev) => [...prev, newMessage]);
+  const handleSend = () => {
+    if(!userInput.trim()) return;
+
+    const newMessages = {from: "user", text: userInput};
+    setMessages((prev) => [...prev, newMessages]);
+
     setUserInput("");
-  
-    const botResponse = await sendMessageToOpenAI(userInput);
-    setMessages((prev) => [...prev, { from: "bot", text: botResponse }]);
+
+    const getBotResponse = (message: string) => {
+    const text = message.toLowerCase();
+
+    if (text.includes("hola") || text.includes("buenas")) {
+      return "¡Hola! 😊 ¿En qué puedo ayudarte?";
+    }
+
+    if (text.includes("libro") || text.includes("precio")) {
+      return "Los precios y detalles de los libros podés verlos en la página principal 📚";
+    }
+
+    if (text.includes("envio")) {
+      return "Hacemos envíos a todo el país 🚚✨";
+    }
+
+    if (text.includes("gracias")) {
+      return "¡De nada! 💛";
+    }
+
+    return "Soy un bot simple 😅 pero intento ayudarte. Probá preguntar sobre precios, envíos o libros.";
   };
+    
+  const fakeResponse = getBotResponse(userInput);
+
+  setTimeout(() => {
+    setMessages((prev) => [...prev, {from: "bot", text: fakeResponse}])
+  });
+
+  }
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (chatRef.current && !chatRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
 
   return (
     <div className="fixed bottom-4 right-4 z-50">
@@ -32,10 +72,10 @@ const ChatSupport = () => {
       >
         💬
       </button>
-
       {isOpen && (
         <section
           role="dialog"
+          ref={chatRef}
           aria-label="Chat de soporte"
           className="w-80 bg-white shadow-lg rounded-lg p-4 flex flex-col fixed bottom-20 right-4 animate-fade-in"
         >
@@ -51,7 +91,7 @@ const ChatSupport = () => {
           </div>
 
           <div className="h-64 overflow-y-auto mb-2 space-y-2">
-            {messages.map((msg, i) => (
+            {message.map((msg, i) => (
               <div
                 key={i}
                 className={`p-2 rounded-md text-sm max-w-[80%] break-words ${
@@ -64,16 +104,13 @@ const ChatSupport = () => {
               </div>
             ))}
           </div>
-
-          <div className="flex mt-auto">
+            <div className="flex mt-auto">
             <input
               type="text"
               value={userInput}
               onChange={(e) => setUserInput(e.target.value)}
               onKeyDown={(e) => {
-                if (e.key === "Enter") {
-                  handleSend();
-                }
+                if (e.key === "Enter") handleSend();
               }}
               placeholder="Escribe tu mensaje..."
               className="flex-1 border border-gray-300 rounded-l-md px-2 py-1 focus:outline-none"
@@ -88,7 +125,7 @@ const ChatSupport = () => {
         </section>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default ChatSupport; */
+export default ChatSupport
