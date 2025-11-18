@@ -1,8 +1,14 @@
 
 import Navbar from '../components/Navbar'
 import { useLocation } from 'react-router-dom'
+import SearchBar from './Searchbar';
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  search: string;
+  setSearch: (value: string) => void;
+}
+
+const Header: React.FC<HeaderProps> = ({ search, setSearch }) => {
   const location = useLocation();
   const isHome = location.pathname === "/";
 
@@ -11,10 +17,13 @@ const Header: React.FC = () => {
     <header className={`${isHome ? '' : 'bg-[#fde8f0]'}`}>
       <Navbar />
       {isHome && (
-        <section 
-        className='w-full h-[80vh] bg-cover bg-center bg-fixed'
-        style={{ backgroundImage: 'url("/assets/headers.jpg")' }}>
-        </section>
+        <>
+          <section
+            className='w-full h-[80vh] bg-cover bg-center bg-fixed flex justify-center flex-col'
+            style={{ backgroundImage: 'url("/assets/headers.jpg")' }}>
+          <SearchBar value={search} onChange={setSearch} />
+          </section>
+        </>
       )}
     </header>
   )
