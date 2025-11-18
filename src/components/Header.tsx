@@ -1,7 +1,7 @@
 
 import Navbar from '../components/Navbar'
 import { useLocation } from 'react-router-dom'
-import SearchBar from './Searchbar';
+import SearchBar from './SearchBar';
 
 interface HeaderProps {
   search: string;
