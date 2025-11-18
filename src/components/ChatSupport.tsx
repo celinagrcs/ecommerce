@@ -33,7 +33,7 @@ function ChatSupport() {
     }
 
     if (text.includes("envio")) {
-      return "Hacemos envíos a todo el país 🚚✨";
+      return "Hacemos envíos gratis a todo el país 🚚✨";
     }
 
     if (text.includes("gracias")) {

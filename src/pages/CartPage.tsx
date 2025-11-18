@@ -17,7 +17,7 @@ const CartPage: React.FC = () => {
   return (
     <article className="max-w-3xl mx-auto p-10 h-auto">
       {cart.length === 0 ? (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center h-[50vh]">
           <p className="text-center py-10 text-gray-500 mb-2">No hay productos en el carrito </p>
           <Link to="/" className="bg-[#ff8e3c] text-white px-4 py-2 rounded hover:bg-[#d37533]">Ir a la tienda</Link>
         </div>
