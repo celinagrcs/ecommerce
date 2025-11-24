@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import { confirmDelete } from "../utils/swalUtils";
+import { simulatePayment } from "../utils/paymentProcess";
 
 const CartPage: React.FC = () => {
   const { cart, removeFromCart } = useCart();
+  const navigate = useNavigate();
 
   const handleDelete = (id: string | number) => {
     confirmDelete(() => removeFromCart(Number(id)));
@@ -13,6 +15,13 @@ const CartPage: React.FC = () => {
     const priceNumber = parseFloat(book.price.replace('$', '').replace(/\./g, ''));
     return total + (priceNumber * book.quantity);
   }, 0);
+
+  const handlePayment = async () => {
+    const result = await simulatePayment();
+    if (result) {
+      navigate("/");
+    }
+  }
 
   return (
     <article className="max-w-3xl mx-auto p-10 h-auto">
@@ -56,7 +65,9 @@ const CartPage: React.FC = () => {
           </div>
           <div className="flex justify-end mt-4">
             <button 
-              className="bg-[#ff8e3c] hover:bg-[#d37533] text-white px-6 py-2 rounded-md transition-colors">
+              className="bg-[#ff8e3c] hover:bg-[#d37533] text-white px-6 py-2 rounded-md transition-colors"
+              onClick={handlePayment}
+              >
               Proceder al Pago
             </button>
           </div>
