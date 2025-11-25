@@ -1,6 +1,6 @@
 import Swal from "sweetalert2";
 
-export const simulatePayment = async () => {
+export const simulatePayment = async ()=> {
   Swal.fire({
     title: "Procesando pago...",
     text: "Por favor espera.",
@@ -24,11 +24,11 @@ export const simulatePayment = async () => {
         ${trackingCode}
       </p>
     `,
-    confirmButtonText: "Volver al inicio",
+    confirmButtonText: "Ver historial de compras",
     confirmButtonColor: "#ff8e3c",
   });
 
-  return true;
+  return trackingCode;
 }
 
 function generateTrackingCode() {

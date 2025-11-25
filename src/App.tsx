@@ -7,6 +7,7 @@ import ChatSupport from './components/ChatSupport'
 import Footer from "./components/Footer"
 import ScrollToTop from './utils/ScrollToTop'
 import { useState } from 'react'
+import OrderHistoryPage from './pages/OrderHistoryPage'
 
 function App() {
     const [search, setSearch] = useState("");
@@ -19,6 +20,7 @@ function App() {
         <Route path='/' element={<Home search={search} />} />
         <Route path='/CartPage' element={<CartPage />} />
         <Route path='/book/:id' element={<BookPage />} />
+        <Route path="/orders" element={<OrderHistoryPage />} />
       </Routes>
       <Footer />
     </>

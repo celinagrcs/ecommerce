@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import { confirmDelete } from "../utils/swalUtils";
 import { simulatePayment } from "../utils/paymentProcess";
+import { Order } from "../types/order";
 
 const CartPage: React.FC = () => {
   const { cart, removeFromCart } = useCart();
@@ -17,14 +18,29 @@ const CartPage: React.FC = () => {
   }, 0);
 
   const handlePayment = async () => {
-    const result = await simulatePayment();
-    if (result) {
-      navigate("/");
-    }
+    const trackingCode = await simulatePayment();
+    if (!trackingCode) return;
+
+
+    const order: Order = {
+      id: trackingCode,
+      date: new Date().toISOString(),
+      items: cart,
+      total: totalPrice,
+    };
+
+    const existing = JSON.parse(localStorage.getItem("orders") || "[]");
+    existing.push(order);
+    localStorage.setItem("orders", JSON.stringify(existing));
+
+    navigate("/orders");
   }
 
   return (
     <article className="max-w-3xl mx-auto p-10 h-auto">
+      <h2 className="font-extrabold text-2xl md:text-4xl py-10 text-center font-title text-[#2a2a2a]">
+        Carrito de Compras
+      </h2>
       {cart.length === 0 ? (
         <div className="flex flex-col items-center h-[50vh]">
           <p className="text-center py-10 text-gray-500 mb-2">No hay productos en el carrito </p>
