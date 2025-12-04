@@ -4,8 +4,9 @@ import { CartItem } from "../types/cart";
 
 interface CartContextProps {
   cart: CartItem[],
-  addToCart: (item: CartItem, quantity?: number) => void;
-  removeFromCart: (id: number) => void;
+  addToCart: (item: CartItem, quantity?: number) => void,
+  removeFromCart: (id: number) => void,
+  clearCart: () => void,
 }
 
 const CartContext = createContext<CartContextProps | undefined>(undefined);
@@ -20,21 +21,21 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
 
-  const addToCart = (item: CartItem) => {
+  const addToCart = (newItem: CartItem) => {
     setCart((prev) => {
       const existingItemIndex = prev.findIndex(
-        (cartItem) => cartItem.id === item.id
+        (cartItem) => cartItem.id === newItem.id
       );
   
       if (existingItemIndex !== -1) {
         return prev.map((cartItem) => 
-          cartItem.id === item.id
-            ? { ...item } // Aquí usamos el nuevo item completo
+          cartItem.id === newItem.id
+            ? newItem
             : cartItem
         );
       }
   
-      return [...prev, item];
+      return [...prev, newItem];
     });
   };
 
@@ -42,8 +43,12 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     setCart((prev) => prev.filter((item) => item.id !== id));
   };
 
+  const clearCart = () => {
+    setCart([]);
+  }
+
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
+    <CartContext.Provider value={{ cart, addToCart, removeFromCart, clearCart }}>
       {children}
     </CartContext.Provider>
   )

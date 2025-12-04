@@ -20,7 +20,7 @@ const Header: React.FC<HeaderProps> = ({ search, setSearch }) => {
         <>
           <section
             className='w-full h-[80vh] bg-cover bg-center bg-fixed flex justify-center flex-col'
-            style={{ backgroundImage: 'url("/assets/headers.jpg")' }}>
+            style={{ backgroundImage: 'url("/assets/headers.webp")' }}>
           <SearchBar value={search} onChange={setSearch} />
           </section>
         </>

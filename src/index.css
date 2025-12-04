@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  font-display: swap;
+}
 
 ::-webkit-scrollbar {
   width: 6px; 

@@ -5,7 +5,7 @@
     "author": "Julio Cortázar",
     "price": "$32.189",
     "description": "En Rayuela (1963), Julio Cortázar supo condensar sus obsesiones estéticas, literarias y vitales a partir de un mosaico diverso, profundo, inagotable que, a su vez, refleja de forma maravillosa lo más esencial de su época. El amor turbulento de Oliveira y La Maga, los amigos del Club de la Serpiente, las impredecibles caminatas por París -la ciudad que promete el cielo pero puede conducir al infierno-, encuentran su contracara en la aventura protagonizada por Oliveira, Talita y Traveler en Buenos Aires. Rayuela es un libro único, abierto a múltiples lecturas, lúdico, complejo, lleno de riesgo y humor, de una originalidad sin precedentes y un talento innato para influir en las futuras generaciones.",
-    "image": "/assets/rayuela1.png",
+    "image": "/assets/rayuela1.webp",
     "featured": false
   },
   {
@@ -14,7 +14,7 @@
     "author": "Sarah J. Maas",
     "price": "$34.000",
     "description": "Bryce Quinlan tenía una vida perfecta, trabajando todo el día y divirtiéndose toda la noche, hasta que un demonio asesina a sus mejores amigos, dejándola herida y sola. Cuando el culpable está detrás de las rejas pero los crímenes continúan, Bryce se encuentra a sí misma en el corazón de la investigación... y hará lo que sea necesario para vengar la muerte de sus amigos.",
-    "image": "/assets/ciudad-medialuna.jpg",
+    "image": "/assets/ciudad-medialuna.webp",
     "featured": true
   },
   {
@@ -23,7 +23,7 @@
     "author": "Sarah J. Maas",
     "price": "$21.600",
     "description": "Cuando la cazadora de diecinueve aos, Feyre, mata a un lobo en el bosque, una criatura bestial irrumpe en su casa para exigir una retribucin. Trasladada a una tierra mgica y engaosa que solo conoce a travs de leyendas, Feyre descubre que su captor no es un animal, sino Tamlin: una criatura inmortal y letal que alguna vez rein en su mundo. Mientras Feyre vive en su castillo, lo que siente por Tamlin muta de una hostilidad helada a una pasin ardiente y feroz, a pesar de todas las mentiras y advertencias a las que queda expuesta en ese mundo fantstico, bello y peligroso. No obstante, una vil sombra ancestral sobre la tierra de los inmortales crece da a da, y Feyre debe encontrar la forma de detenerla… o condenar a Tamlin .y a su mundo. para siempre. De la autora nmero uno en ventas de The New York Times y USA Today, Sarah J. Maas, llega un libro sensual y apasionante que combina romance, aventura y las tradiciones del mundo fantstico en la historia ms entraable nunca antes escrita.",
-    "image": "/assets/acotar.jpg",
+    "image": "/assets/acotar.webp",
     "featured": false
   },
   {
@@ -32,7 +32,7 @@
     "author": "Emily Henry",
     "price": "$34.077",
     "description": "Dos escritores, unas vacaciones y una apuesta. Todo puede suceder durante un verano. January Andrews es escritora de novelas románticas y una soñadora empedernida. August Everett escribe novelas serias y cree que el amor verdadero es sólo un cuento chino. Pero January y Gus tienen mucho más en común de lo que creen: Los dos están arruinados. Los dos están bloqueados. Y los dos necesitan escribir un bestseller antes de que termine el verano.",
-    "image": "/assets/beach-read.jpg",
+    "image": "/assets/beach-read.webp",
     "featured": true
   },
   {
@@ -41,7 +41,7 @@
     "author": "M.L Rio",
     "price": "$29.000",
     "description": "El día que Oliver Marks cumple su condena, el hombre que lo puso en la cárcel está esperándolo a la salida. El detective Colborne quiere saber la verdad y, después de diez años, Oliver finalmente está listo para contársela.Una década atrás: Oliver es uno de los siete actores shakespearianos en el Conservatorio Clásico Dellecher, un lugar donde rige la cruda ambición y la competencia feroz. En este mundo apartado, de chimeneas encendidas y libros con encuadernación de cuero, Oliver y sus amigos interpretan los mismos papeles arriba y abajo del escenario: el héroe, el villano, el tirano, la seductora, la ingenua, los extras. Pero en su cuarto y último año de conservatorio, las rivalidades amistosas se vuelven desagradables, y en la noche de estreno, la violencia real invade el mundo de fantasía de los estudiantes. Por la mañana, los chicos de cuarto año deben enfrentar su propia tragedia y su desafío actoral más difícil: convencerse unos a otros y a la policía de que son inocentes.¿Quién es quién en esta historia?",
-    "image": "/assets/todossomosvillanos.jpg",
+    "image": "/assets/todossomosvillanos.webp",
     "featured": true
     },
   {
@@ -59,7 +59,7 @@
     "author": "Ernest Hemingway",
     "price": "$27.729",
     "description": "Publicada póstumamente en 1964, ‘París era una fiesta’ es la obra más personal y reveladora de Hemingway, quien, ya en el crepúsculo de su vida, narra aquí los dorados, salvajes y fructíferos años de su juventud en el París de los años veinte, en compañía de escritores como Scott Fitzgerald o Ezra Pound, la llamada ‘generación perdida’, según la popular denominación acuñada en aquella época por Gertrude Stein, mítica madrina del grupo. Crónica de la formación de un joven escritor, retrato de una ciudad perdida, oda a la amistad y verdadero testamento literario, París era una fiesta es uno de los libros capitales para entender el siglo XX, así como el universo y la personalidad de uno de sus más grandes creadores.",
-    "image": "/assets/paris.jpg",
+    "image": "/assets/paris.webp",
     "featured": false
   },
   {
@@ -68,7 +68,7 @@
     "author": "Mariana Zapata",
     "price": "$23.150",
     "description": "Si alguien le pidiera a Jasmine Santos que describiera la última época de su vida con una sola palabra, seguramente utilizaría una que habría que censurar. Después de años de dedicación e incontables huesos y compromisos rotos, sabe que su oportunidad para dedicarse profesionalmente al patinaje artístico está esfumándose. Sin embargo, cuando la oferta que tanto estaba esperando por fin llega, lo hace de la mano de un idiota arrogante que es, además, su némesis. Pero tal vez haya llegado el momento de que Jasmine reconsidere muchas cosas... Entre ellas, a Ivan Lukov.",
-    "image": "/assets/mariana.jpg",
+    "image": "/assets/mariana.webp",
     "featured": false
   },
   {
@@ -77,7 +77,7 @@
     "author": "Sarah J. Maas",
     "price": "$32.936",
     "description": "En las tenebrosas minas de sal de Endovier, una muchacha de dieciocho años cumple cadena perpetua. Es una asesina profesional, la mejor en lo suyo, pero ha cometido un error fatal. La han capturado. El joven capitán Westfall le ofrece un trato: la libertad a cambio de un enorme sacrificio. Celaena debe representar al príncipe en un torneo a muerte, en el que deberá luchar con los asesinos y ladrones más peligrosos del reino. Viva o muerta, Celaena será libre. Tanto si gana como si pierde, está a punto de descubrir su verdadero destino. Pero ¿qué pasará entretanto con su corazón de asesina?",
-    "image": "/assets/tronodecristal.jpg",
+    "image": "/assets/tronodecristal.webp",
     "featured": false
   },
   {
@@ -86,7 +86,7 @@
     "author": "J. K. Rowling",
     "price": "$20.200",
     "description": "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley. Harry se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para siempre. En ella le comunican que ha sido aceptado como alumno en el colegio interno Hogwarts de magia y hechicería. A partir de ese momento, la suerte de Harry da un vuelco espectacular. En esa escuela tan especial aprenderá encantamientos, trucos fabulosos y tácticas de defensa contra las malas artes. Se convertirá en el campeón escolar de quidditch, especie de fútbol aéreo que se juega montado sobre escobas, y se hará un puñado de buenos amigos... aunque también algunos temibles enemigos. Pero sobre todo, conocerá los secretos que le permitirán cumplir con su destino. Pues, aunque no lo parezca a primera vista, Harry no es un chico común y corriente. ¡Es un verdadero mago!",
-    "image": "/assets/harrypotter.jpg",
+    "image": "/assets/harrypotter.webp",
     "featured": false
   },
   {
@@ -95,7 +95,7 @@
     "author": "Jane Austen",
     "price": "$29.941",
     "description": "Emma cuenta la historia de una inteligente y laboriosa joven empeñada en hacer de celestina de todas sus amistades. Cuando su institutriz, amiga y confidente decide contraer matrimonio, Emma Woodhouse se descubrirá sola, frente al vacío de su vida y con la penosa tarea de intentar que los demáslleven una vida tan perfecta como la suya. Pero todos sus esfuerzos de manipulación sentimental tan solo consiguen crear a su alrededor una telaraña de enredos, malentendidos y confusiones que pone a prueba su confianza en sí misma.",
-    "image": "/assets/emmajane.jpg",
+    "image": "/assets/emmajane.webp",
     "featured": false
   },
   {
@@ -104,7 +104,7 @@
     "author": "Stefan Zweig",
     "price": "$23.420",
     "description": "Novela de ajedrez cuenta la historia de Mirko Czentovicz, un outsider con la mente vacía y campeón del mundo de ajedrez. Durante un viaje en el barco que le lleva de gira, se encuentra con el doctor B., que en una partida logra desestabilizarlo. El encuentro entre estos dos personajes tan antagónicos es la base argumental con la que Stefan Zweig explora de manera simbólica el conflicto entre barbarie y civilización, brutalidad y educación, conciencia y violencia o pensamiento y acción. Una partida final que puede concebirse como un epílogo de la lucha de Zweig contra el fanatismo y la radicalización de la política, y la defensa del humanismo como pilar fundamental de su idea de Europa.",
-    "image": "/assets/noveladeajedrez.jpg",
+    "image": "/assets/noveladeajedrez.webp",
     "featured": false
   }
 ]

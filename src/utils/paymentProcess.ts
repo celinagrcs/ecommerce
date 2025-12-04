@@ -1,6 +1,9 @@
-import Swal from "sweetalert2";
+
 
 export const simulatePayment = async ()=> {
+
+  const { default: Swal } = await import('sweetalert2')
+
   Swal.fire({
     title: "Procesando pago...",
     text: "Por favor espera.",

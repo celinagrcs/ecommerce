@@ -94,7 +94,7 @@ function ChatSupport() {
             {message.map((msg, i) => (
               <div
                 key={i}
-                className={`p-2 rounded-md text-sm max-w-[80%] break-words ${
+                className={`p-2 rounded-md text-sm max-w-auto break-words ${
                   msg.from === "user"
                     ? "bg-blue-100 text-right self-end"
                     : "bg-gray-100 text-left self-start"
@@ -105,8 +105,7 @@ function ChatSupport() {
             ))}
           </div>
             <div className="flex mt-auto">
-            <input
-              type="text"
+            <textarea
               value={userInput}
               onChange={(e) => setUserInput(e.target.value)}
               onKeyDown={(e) => {
