@@ -106,5 +106,59 @@
     "description": "Novela de ajedrez cuenta la historia de Mirko Czentovicz, un outsider con la mente vacía y campeón del mundo de ajedrez. Durante un viaje en el barco que le lleva de gira, se encuentra con el doctor B., que en una partida logra desestabilizarlo. El encuentro entre estos dos personajes tan antagónicos es la base argumental con la que Stefan Zweig explora de manera simbólica el conflicto entre barbarie y civilización, brutalidad y educación, conciencia y violencia o pensamiento y acción. Una partida final que puede concebirse como un epílogo de la lucha de Zweig contra el fanatismo y la radicalización de la política, y la defensa del humanismo como pilar fundamental de su idea de Europa.",
     "image": "/assets/noveladeajedrez.webp",
     "featured": false
+  },
+  {
+    "id": 13,
+    "title": "Alas de Sangre",
+    "author": "Rebecca Yarros",
+    "price": "$37.900",
+    "description": "Violet Sorrengail creía que a sus veinte años se uniría al Cuadrante de los Escribas para vivir una vida tranquila, estudiando sus amados libros y las historias antiguas que tanto le fascinan. Sin embargo, por órdenes de su madre, la temida comandante general, Violet debe unirse a los miles de candidatos que luchan por formar parte de la élite de Navarre: los jinetes de dragones. Cuando eres más pequeña y frágil que los demás tu vida corre peligro, porque los dragones no se vinculan con humanos débiles; de hecho, los incineran. Sumado a esto, con más jinetes que dragones disponibles, buena parte de los candidatos mataría a Violet con tal de mejorar sus probabilidades de éxito; otros, como el despiadado Xaden Riorson, el líder de ala más poderoso del Cuadrante, la asesinarían simplemente por ser la hija de la comandante general. Para sobrevivir, necesitará aprovechar al máximo todo su ingenio. Día tras día, la guerra que se libra al exterior del Colegio se torna más letal, las defensas del reino se debilitan y los muertos aumentan. Por si fuera poco, Violet sospecha que los líderes de Navarre esconden un terrible secreto.",
+    "image": "/assets/alasdesangre.webp",
+    "featured": false
+  },
+  {
+    "id": 14,
+    "title": "Canción de Hielo y Fuego: Juego de Tronos",
+    "author": "George R.R. Martin",
+    "price": "$37.799",
+    "description": "En el legendario mundo de los Siete Reinos, donde el verano puede durar décadas y el invierno toda una vida, y donde rastros de una magia inmemorial surgen en los rincones más sombríos, la tierra del norte, Invernalia, está resguardada por un colosal muro de hielo que detiene a fuerzas oscuras y sobrenaturales. En este majestuoso escenario, lord Stark y su familia se encuentran en el centro de un conflicto que desatará todas las pasiones: la traición y la lealtad, la compasión y la sed de venganza, el amor y el poder, la lujuria y el incesto, todo ello para ganar la más mortal de las batallas: el trono de hierro, una poderosa trampa que atrapará a los personajes… y al lector. Juego de tronos es el primer volumen de Canción de hielo y fuego, la monumental saga de fantasía épica del escritor George R. R. Martin que ha vendido más de 20 millones de ejemplares en todo el mundo. De la saga que inspiró la filmación de la aclamada serie televisiva de HBO: Game of Thrones.",
+    "image": "/assets/juegodetronos.webp",
+    "featured": false
+  },
+    {
+    "id": 15,
+    "title": "Guia del Autoestopista Galactico",
+    "author": "Douglas Adams",
+    "price": "$28.000",
+    "description": "Un jueves a la hora de comer, la Tierra es inesperadamente demolida para poder construir una nueva autopista hiperespacial. Arthur Dent, un tipo de lo más corriente que esa misma mañana ha visto cómo echaban abajo su propia casa, considera que eso supera lo que una persona puede soportar. Pero, desgraciadamente, el fin de semana no ha hecho más que empezar, y la galaxia es un lugar extraño y sorprendente. Arthur huirá de la Tierra junto con un amigo suyo, Ford Prefect, que resultará ser un extraterrestre emparentado con Zaphod Beeblebrox, un pirata esquizoide de dos cabezas que fue Presidente de la Galaxia, en cuya nave Arthur conocerá al resto de personajes que lo acompañarán a lo largo de su periplo espacial: un androide paranoide y una terrícola que, como él, ha logrado escapar. Gracias a esta ineludible aventura, Dent descubrirá muchas cosas acerca de la existencia, pero, tal como aconseja la Guía del autoestopista galáctico, que no cunda el pánico.",
+    "image": "/assets/guiadelautoestopistagalactico.webp",
+    "featured": false
+  },
+  {
+    "id": 16,
+    "title": "Un Lugar Feliz",
+    "author": "Emily Henry",
+    "price": "$38.000",
+    "description": "Piensa en tu lugar feliz… HARRIET Y WYN han sido la pareja perfecta desde que se conocieron de adolescentes. Son complementarios como la sal y la pimienta, el te y el limon, el aceite y el vinagre. Solo que ahora, por razones de las que todavia no hablan, yano lo son. Rompieron hace cinco meses y todavia no se lo handicho a sus mejores amigos. Por eso acaban compartiendo habitacion en la casa de verano donde, desde hace una decada, hacen una escapada al ao todos juntos. En el transcurso de una semana luminosa y animada, se evaden del mundo, dejan atras los problemas de la vida cotidiana, toman cantidades desmedidas de queso, vino y marisco, y se impregnan del salitre de la costa rodeados de las personas que mejor los entienden. Pero este ao, Harriet y Wyn estn mintiendo a conciencia mientras intentan ignorar lo mucho que todavia se quieren. Porque la casa esta en venta, y esta es la ultima semana quepodran pasar alli. No quieren romperles el corazon a sus amigos contandoles la verdad, asi que fingen que todo sigue igual. Harriet seguira siendo la entusiasta residente de cirugia que nunca empieza una discusion, y Wyn el chico encantador y relajado que no deja que sus problemas trasciendan. Es un plan aparentemente impecable.",
+    "image": "/assets/unlugarfeliz.webp",
+    "featured": false
+  },
+  {
+    "id": 17,
+    "title": "FRANKENSTEIN",
+    "author": "Mary Shelley",
+    "price": "$17.900",
+    "description": "Durante el verano de 1816, en Suiza, un selecto grupo de jóvenes escritores, entre los que se encontraba Mary Shelley, se planteó un desafío literario: ¿quién podría concebir el cuento más espantoso? De esa competencia floreció la idea de Mary: Frankenstein, la primera historia que mezcló ciencia ficción con terror gótico. Protagonizada por una criatura aterradora y singular, esta novela ha fascinado a varias generaciones de lectores.",
+    "image": "/assets/frankestein.webp",
+    "featured": false
+  },
+  {
+    "id": 18,
+    "title": "Amarilla",
+    "author": "Rebecca F. Kuang",
+    "price": "$39.900",
+    "description": "Durante el verano de 1816, en Suiza, un selecto grupo de jóvenes escritores, entre los que se encontraba Mary Shelley, se planteó un desafío literario: ¿quién podría concebir el cuento más espantoso? De esa competencia floreció la idea de Mary: Frankenstein, la primera historia que mezcló ciencia ficción con terror gótico. Protagonizada por una criatura aterradora y singular, esta novela ha fascinado a varias generaciones de lectores.",
+    "image": "/assets/amarilla.webp",
+    "featured": false
   }
 ]
