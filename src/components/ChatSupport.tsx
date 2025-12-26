@@ -77,7 +77,7 @@ function ChatSupport() {
           role="dialog"
           ref={chatRef}
           aria-label="Chat de soporte"
-          className="w-80 bg-white shadow-lg rounded-lg p-4 flex flex-col fixed bottom-20 right-4 animate-fade-in"
+          className="fixed bottom-2 right-4 w-[90vw] sm:w-80 max-h-[calc(100dvh-20px)] p-3 bg-white shadow-2xl rounded-lg flex flex-col animate-fade-in border border-gray-200"
         >
           <div className="flex justify-between items-center mb-2">
             <h2 className="text-sm font-medium text-gray-700">Soporte</h2>
@@ -90,7 +90,7 @@ function ChatSupport() {
             </button>
           </div>
 
-          <div className="h-64 overflow-y-auto mb-2 space-y-2">
+          <div className="flex-1 overflow-y-auto p-4 space-y-3 min-h-0">
             {message.map((msg, i) => (
               <div
                 key={i}
